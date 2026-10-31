@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sizzlemaker"
+version = "0.1.0"
+description = "Turn a folder of clips into a sizzle video cut to the beat. CLI only, built for agents."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+drive = ["gdown>=5"]
+
+[project.scripts]
+sizzlemaker = "sizzlemaker.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["sizzlemaker*"]
