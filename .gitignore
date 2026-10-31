@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+sizzle_work/
+out/
+*.mp4
+*.mov
+*.wav
+*.mp3
+.env
